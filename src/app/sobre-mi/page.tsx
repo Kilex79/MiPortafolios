@@ -52,15 +52,15 @@ const SobreMi = () => {
                 </h2>
                 <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-lg text-gray-700 dark:text-gray-300">
                     <li className="flex items-center space-x-2">
-                        <span className="text-2xl text-rojo">🇪🇸</span>
+                        <span className="text-2xl text-rojo">ES</span>
                         <span>Castellano: Nativo</span>
                     </li>
                     <li className="flex items-center space-x-2">
-                        <span className="text-2xl text-rojo">🇮🇹</span>
+                        <span className="text-2xl text-rojo">CAT</span>
                         <span>Catalán: Nativo</span>
                     </li>
                     <li className="flex items-center space-x-2">
-                        <span className="text-2xl text-rojo">🇬🇧</span>
+                        <span className="text-2xl text-rojo">ING</span>
                         <span>Inglés: Medio/Alto</span>
                     </li>
                 </ul>
