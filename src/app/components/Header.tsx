@@ -45,8 +45,18 @@ const Header = () => {
         <header className="w-full fixed z-50 select-none backdrop-blur-lg backdrop-saturate-200 bg-[rgba(17,25,40,0.56)] border border-[rgba(74,45,45,0.13)] p-6">
             <nav className="container mx-auto flex justify-between items-center px-6 md:px-12">
                 {/* Logo o Nombre */}
-                <div className="text-white text-2xl font-extrabold">
-                    <Link href="/">🌟 MiPortafolio</Link>
+                <div className="text-white text-2xl font-extrabold flex items-center space-x-4">
+                    {/* Link que envuelve tanto el logo como el nombre */}
+                    <Link href="/" className="flex items-center space-x-4">
+                        {/* Imagen con estilo redondo y borde */}
+                        <img
+                            src="/iTorrusDevIcon.webp"
+                            alt="Logo de iTorrús Dev"
+                            className="w-8 h-8 md:w-8 md:h-8 rounded-full border-2 border-gray-500"
+                        />
+                        {/* Texto al lado de la imagen */}
+                        <span>iTorrús Dev</span>
+                    </Link>
                 </div>
 
                 {/* Menú de Navegación */}
@@ -54,8 +64,8 @@ const Header = () => {
                     <Link
                         href="/"
                         className={`relative text-lg font-medium transition-all ${pathname === "/"
-                                ? "text-rojo after:absolute after:w-full after:h-[2px] after:bg-rojo after:left-0 after:-bottom-1"
-                                : "text-white hover:text-rojo"
+                            ? "text-rojo after:absolute after:w-full after:h-[2px] after:bg-rojo after:left-0 after:-bottom-1"
+                            : "text-white hover:text-rojo"
                             }`}
                     >
                         Inicio
@@ -63,8 +73,8 @@ const Header = () => {
                     <Link
                         href="/sobre-mi"
                         className={`relative text-lg font-medium transition-all ${pathname === "/sobre-mi"
-                                ? "text-rojo after:absolute after:w-full after:h-[2px] after:bg-rojo after:left-0 after:-bottom-1"
-                                : "text-white hover:text-rojo"
+                            ? "text-rojo after:absolute after:w-full after:h-[2px] after:bg-rojo after:left-0 after:-bottom-1"
+                            : "text-white hover:text-rojo"
                             }`}
                     >
                         Sobre mí
@@ -72,8 +82,8 @@ const Header = () => {
                     <Link
                         href="/proyectos"
                         className={`relative text-lg font-medium transition-all ${pathname === "/proyectos"
-                                ? "text-rojo after:absolute after:w-full after:h-[2px] after:bg-rojo after:left-0 after:-bottom-1"
-                                : "text-white hover:text-rojo"
+                            ? "text-rojo after:absolute after:w-full after:h-[2px] after:bg-rojo after:left-0 after:-bottom-1"
+                            : "text-white hover:text-rojo"
                             }`}
                     >
                         Proyectos
@@ -81,8 +91,8 @@ const Header = () => {
                     <Link
                         href="/web-info"
                         className={`relative text-lg font-medium transition-all ${pathname === "/web-info"
-                                ? "text-rojo after:absolute after:w-full after:h-[2px] after:bg-rojo after:left-0 after:-bottom-1"
-                                : "text-white hover:text-rojo"
+                            ? "text-rojo after:absolute after:w-full after:h-[2px] after:bg-rojo after:left-0 after:-bottom-1"
+                            : "text-white hover:text-rojo"
                             }`}
                     >
                         <InformationCircleIcon className="w-6 h-6" />
