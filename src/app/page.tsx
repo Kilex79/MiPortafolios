@@ -4,7 +4,7 @@ export default function Home() {
       {/* Contenido principal */}
       <div className="relative z-10 text-center max-w-4xl">
         <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-violeta via-morado to-rojo bg-clip-text text-transparent animate-fade-in">
-          ¡Hola! 👋 Soy Ismael Torrús
+          ¡Hola! 👋 Soy Ismael Torrús. V1
         </h1>
         <p className="mt-4 text-xl md:text-2xl text-gray-700 dark:text-gray-200 font-medium animate-fade-in-delay">
           Desarrollador especializado en <span className="text-rojo font-semibold">aplicaciones multiplataforma</span> y <span className="text-rojo font-semibold">páginas web modernas</span>.
