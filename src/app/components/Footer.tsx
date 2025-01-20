@@ -7,7 +7,7 @@ const Footer = () => {
                 </p>
                 <p className="mt-2 text-gray-400">
                     <a href="mailto:ismael@example.com" className="hover:text-rojo transition-all duration-200">
-                        itorrusbonet2002b@gmail.com
+                        ismatb.photoscapes@gmail.com
                     </a>
                 </p>
                 <p className="mt-4 text-gray-400">

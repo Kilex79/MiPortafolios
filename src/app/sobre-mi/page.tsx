@@ -6,8 +6,8 @@ const SobreMi = () => {
                     Sobre mí
                 </h1>
                 <p className="mt-6 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Soy un programador apasionado con experiencia en el desarrollo de aplicaciones multiplataforma y sitios web.
-                    A lo largo de mi carrera, he trabajado con tecnologías modernas como <strong>Java</strong>, <strong>My SQL</strong>, <strong>React</strong>, <strong>Next.js</strong> y <strong>Tailwind CSS</strong>, y me encanta aprender nuevas herramientas y mejorar mis habilidades para crear aplicaciones y webs más eficientes y de alto rendimiento. Soy un apasionado por la Inteligencia Artificial: De forma autodidacta, he adquirido habilidades en el uso de la IA para optimizar mi aprendizaje y tareas profesionales. Realizo “prompts” efectivos para mejorar la funcionalidad y eficiencia de las herramientas de IA.
+                    Soy un programador apasionado en el desarrollo de aplicaciones multiplataforma y sitios web.
+                    A lo largo de mis estudios profesionales, he trabajado con tecnologías modernas como <strong>Java</strong>, <strong>My SQL</strong>, <strong>React</strong>, <strong>Next.js</strong> y <strong>Tailwind CSS</strong>, y me encanta aprender nuevas herramientas y mejorar mis habilidades para crear aplicaciones y webs más eficientes y de alto rendimiento. Soy un apasionado por la Inteligencia Artificial: De forma autodidacta, he adquirido habilidades en el uso de la IA para optimizar mi aprendizaje y tareas profesionales. Realizo “prompts” efectivos para mejorar la funcionalidad y eficiencia de las herramientas de IA.
                 </p>
 
                 <h2 className="text-3xl font-semibold text-center text-rojo mt-12">
