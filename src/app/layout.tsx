@@ -34,7 +34,7 @@ export default function Layout({
         <Header /> {/* Componente Header que contiene el menú de navegación. */}
 
         {/* Espaciado para que el contenido no se superponga al header */}
-        <div className=""> {/* Se agrega un padding-top de 16 para evitar que el contenido se superponga al header fijo. */}
+        <div> {/* Se agrega un padding-top de 16 para evitar que el contenido se superponga al header fijo. */}
           {children} {/* Aquí se renderiza el contenido o los componentes pasados al Layout. */}
         </div>
         <Footer />

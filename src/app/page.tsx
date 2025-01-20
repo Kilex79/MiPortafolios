@@ -10,18 +10,11 @@ export default function Home() {
           Desarrollador especializado en <span className="text-rojo font-semibold">aplicaciones multiplataforma</span> y <span className="text-rojo font-semibold">páginas web modernas</span>.
         </p>
         <div className="mt-8 flex space-x-4 justify-center animate-fade-in-delay">
-          <a
-            href="/sobre-mi"
-            className="px-6 py-3 rounded-lg bg-violeta text-white font-medium shadow-lg hover:bg-rojo transition-all duration-300"
-          >
-            Sobre mí
-          </a>
-          <a
-            href="/proyectos"
-            className="px-6 py-3 rounded-lg bg-morado text-white font-medium shadow-lg hover:bg-rojo transition-all duration-300"
-          >
-            Proyectos
-          </a>
+          <div className="mockup-code bg-opacity-55">
+            <pre data-prefix="$"><code>npm i iTorrúsDev</code></pre>
+            <pre data-prefix=">" className="text-warning"><code>installing...</code></pre>
+            <pre data-prefix=">" className="text-success"><code>Done!</code></pre>
+          </div>
         </div>
       </div>
 

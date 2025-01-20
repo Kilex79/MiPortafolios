@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 import { SunIcon, MoonIcon, InformationCircleIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import ThemeToggle from "./ThemeToggle";
 
 const Header = () => {
     const pathname = usePathname(); // Ruta actual
@@ -82,7 +83,7 @@ const Header = () => {
                 </div>
 
                 {/* Menú de Navegación para escritorio */}
-                <div className="hidden md:flex items-center space-x-10">
+                <div className="hidden lg:flex items-center space-x-10">
                     <Link
                         href="/"
                         className={`relative text-lg font-medium transition-all ${pathname === "/"
@@ -119,23 +120,11 @@ const Header = () => {
                     >
                         <InformationCircleIcon className="w-6 h-6" />
                     </Link>
-                    <div
-                        onClick={toggleTheme}
-                        className="relative flex items-center w-16 h-8 bg-[rgba(255,255,255,0.2)] rounded-full p-1 cursor-pointer transition-all"
-                    >
-                        <div
-                            className={`absolute top-1 left-1 h-6 w-6 bg-white rounded-full shadow-md transition-transform ${isDarkMode ? "translate-x-8" : "translate-x-0"
-                                }`}
-                        ></div>
-                        <SunIcon className={`w-5 h-5 absolute left-1.5 text-yellow-400 transition-opacity ${isDarkMode ? "opacity-0" : "opacity-100"
-                            }`} />
-                        <MoonIcon className={`w-5 h-5 absolute right-1.5 text-gray-400 transition-opacity ${isDarkMode ? "opacity-100" : "opacity-0"
-                            }`} />
-                    </div>
+                    <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
                 </div>
 
                 {/* Menú hamburguesa para dispositivos móviles */}
-                <div className="md:hidden flex items-center space-x-4">
+                <div className="lg:hidden flex items-center space-x-4">
                     <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white">
                         {isMenuOpen ? <XMarkIcon className="w-8 h-8" /> : <Bars3Icon className="w-8 h-8" />}
                     </button>
@@ -185,19 +174,7 @@ const Header = () => {
                     >
                         Web Info
                     </Link>
-                    <div
-                        onClick={toggleTheme}
-                        className="relative flex items-center w-16 h-8 bg-[rgba(255,255,255,0.2)] rounded-full p-1 cursor-pointer transition-all"
-                    >
-                        <div
-                            className={`absolute top-1 left-1 h-6 w-6 bg-white rounded-full shadow-md transition-transform ${isDarkMode ? "translate-x-8" : "translate-x-0"
-                                }`}
-                        ></div>
-                        <SunIcon className={`w-5 h-5 absolute left-1.5 text-yellow-400 transition-opacity ${isDarkMode ? "opacity-0" : "opacity-100"
-                            }`} />
-                        <MoonIcon className={`w-5 h-5 absolute right-1.5 text-gray-400 transition-opacity ${isDarkMode ? "opacity-100" : "opacity-0"
-                            }`} />
-                    </div>
+                    <ThemeToggle isDarkMode={isDarkMode} toggleTheme={toggleTheme} />
                 </div>
             )}
         </header>
